@@ -31,11 +31,7 @@ func main() {
 	}
 
 	// Start HTTP server.
-	if err := http.ListenAndServe(":"+port, nil);
-}
-
-func init() {
-	http.HandleFunc("/", handler)
+	http.ListenAndServe(":"+port, nil);
 }
 
 // demo struct holds information needed to run the various demo functions.
