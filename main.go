@@ -31,9 +31,7 @@ func main() {
 	}
 
 	// Start HTTP server.
-	if err := http.ListenAndServe(":"+port, nil); err != nil {
-			log.Errorf(err)
-	}
+	if err := http.ListenAndServe(":"+port, nil);
 }
 
 func init() {
